@@ -8567,7 +8567,7 @@ body {
   .app__inner {
     grid-area: inner;
     overflow: auto;
-    padding: 14px 0; }
+    padding: 24px 0 16px; }
     .app__inner .container {
       padding-left: 16px;
       padding-right: 16px;
@@ -8753,7 +8753,80 @@ body {
   background: #F1F2F6;
   width: 100%;
   display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-decoration: none !important; }
+  .restaurants__item-images {
+    margin-bottom: 4px;
+    display: block;
+    height: 130px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative; }
+    .restaurants__item-images img {
+      width: 100%;
+      height: 100%;
+      -o-object-position: center;
+         object-position: center;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .restaurants__item-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: rgba(241, 242, 246, 0.35);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 10px;
+    height: 36px;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    color: #0A191E; }
+  .restaurants__item-content {
+    padding: 4px;
+    display: block; }
+  .restaurants__item-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0A191E;
+    margin-bottom: 4px; }
+  .restaurants__item-text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #798184;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5px; }
+    .restaurants__item-text .dot {
+      display: block;
+      width: 3px;
+      height: 3px;
+      background: #798184;
+      border-radius: 10px;
+      margin: 0 4px; }
+  .restaurants__item-rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #31B9CC;
+    font-weight: bold;
+    font-size: 12px; }
+    .restaurants__item-rate img {
+      margin-right: 7px; }
 
 .category {
   overflow-y: hidden;
