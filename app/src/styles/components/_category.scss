@@ -21,10 +21,20 @@
       border-radius: 16px;
       background: $brand-light;
       display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 10px;
 
+      svg, img {
+        width: 34px;
+        height: 34px;
+      }
       &.active {
         background: $brand-secondary;
+
+        svg {
+          fill: $brand-light;
+        }
       }
     }
     &-title {
