@@ -8613,7 +8613,8 @@ body {
   display: flex;
   padding: 0 12px; }
   .header__content {
-    max-width: 195px; }
+    max-width: 195px;
+    margin-right: auto; }
     .header__content-title {
       margin-bottom: 5px;
       font-weight: bold;
@@ -8627,7 +8628,7 @@ body {
       line-height: 15px;
       color: #798184; }
   .header__order {
-    margin-left: auto;
+    margin-left: 30px;
     background: #FECA57;
     border-radius: 16px;
     height: 44px;

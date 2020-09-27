@@ -4,6 +4,7 @@
 
   &__content {
     max-width: 195px;
+    margin-right: auto;
 
     &-title {
       margin-bottom: 5px;
@@ -21,7 +22,7 @@
     }
   }
   &__order {
-    margin-left: auto;
+    margin-left: 30px;
     background: $brand-primary;
     border-radius: 16px;
     height: 44px;
