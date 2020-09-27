@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  padding: 0 12px;
+
+  &__content {
+    max-width: 195px;
+
+    &-title {
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 32px;
+      color: $brand-text;
+    }
+    &-text {
+      font-weight: 400;
+      letter-spacing: .4px;
+      font-size: 12px;
+      line-height: 15px;
+      color: $brand-text-light;
+    }
+  }
+  &__order {
+    margin-left: auto;
+    background: $brand-primary;
+    border-radius: 16px;
+    height: 44px;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    outline: none !important;
+    border: 0;
+    transition: background .3s;
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      color: #FFFFFF;
+      margin-left: 10px;
+    }
+    &:focus {
+      background: darken($brand-primary, 10%);
+    }
+  }
+}

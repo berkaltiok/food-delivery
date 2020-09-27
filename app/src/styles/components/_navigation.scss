@@ -3,4 +3,37 @@
   height: 70px;
   background: #FFFFFF;
   box-shadow: 0 30px 60px rgba(10, 25, 30, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  &__item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    min-width: 40px;
+    transition: all .3s;
+    padding: 0 20px;
+
+    img {
+      height: 17px;
+    }
+    span {
+      display: none;
+      color: $brand-secondary;
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    &.active {
+      background: $brand-light;
+
+      span {
+        display: block;
+      }
+    }
+  }
 }

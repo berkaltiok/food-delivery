@@ -1,28 +1,28 @@
 /* Font Library */
 @font-face {
-  font-family: 'Cera Pro';
-  src: url('../font/Cera Pro Light.otf') format('opentype');
+  font-family: 'Cera';
+  src: url('../fonts/light.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cera Pro';
-  src: url('../font/Cera Pro Medium.otf') format('opentype');
+  font-family: 'Cera';
+  src: url('../fonts/medium.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cera Pro';
-  src: url('../font/Cera Pro Bold.otf') format('opentype');
+  font-family: 'Cera';
+  src: url('../fonts/bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cera Pro';
-  src: url('../font/Cera Pro Black.otf') format('opentype');
+  font-family: 'Cera';
+  src: url('../fonts/black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
 }
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  font-family: "Cera Pro", sans-serif;
+  font-family: "Cera", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
