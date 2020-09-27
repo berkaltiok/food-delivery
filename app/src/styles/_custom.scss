@@ -1,6 +1,34 @@
+/* Font Library */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../font/Cera Pro Light.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../font/Cera Pro Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../font/Cera Pro Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../font/Cera Pro Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Lato', sans-serif;
-  background-color: #F4F5F9;
+  font-family: "Cera Pro", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -11,6 +39,7 @@ body {
     overflow: hidden;
   }
 }
+
 
 @mixin responsive($media) {
   @media only screen and (max-width: $media) { @content; }

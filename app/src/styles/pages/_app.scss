@@ -1,0 +1,23 @@
+.app {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: calc(100vh - 70px) 70px;
+  gap: 0 0;
+  grid-template-areas: "inner" "nav";
+
+  &__inner {
+    grid-area: inner;
+    overflow: auto;
+    padding: 14px 16px;
+
+    @media (min-width: $breakpoint-md) {
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+  }
+  &__nav {
+    grid-area: nav;
+  }
+}

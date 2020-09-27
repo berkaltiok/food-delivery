@@ -1,0 +1,35 @@
+.search {
+  background: $brand-light;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+
+  &__input {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    border: 0;
+    background: transparent;
+    line-height: 15px;
+    outline: none !important;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    padding: 0 12px;
+  }
+  &__button {
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    transition: all .3s;
+    outline: none !important;
+
+    &:focus, &:active {
+      background: rgba(#000, .05);
+    }
+  }
+}

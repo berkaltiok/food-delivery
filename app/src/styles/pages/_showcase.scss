@@ -1,0 +1,26 @@
+.showcase {
+  background: $brand-warning;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__mobile {
+    margin: 0 60px;
+    width: 407px;
+    height: 844px;
+    padding: 16px;
+    border-radius: 50px;
+    background: #F1F2F6;
+    box-shadow: 30px 30px 99px rgba(255, 207, 100, 0.27);
+    overflow: hidden;
+
+    iframe {
+      height: 100%;
+      width: 100%;
+      border-radius: 40px;
+      border: 0;
+    }
+  }
+}

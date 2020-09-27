@@ -1,8 +1,13 @@
 // Core variables and mixins
-@import "_variables";
+@import "variables";
 
 // Reset
-@import "_custom";
+@import "custom";
 
 // Pages
-@import "pages/_home";
+@import "pages/app";
+@import "pages/showcase";
+
+// Components
+@import "components/navigation";
+@import "components/search";
