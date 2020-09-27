@@ -8688,7 +8688,8 @@ body {
     min-width: 40px;
     -webkit-transition: all .3s;
     transition: all .3s;
-    padding: 0 20px; }
+    padding: 0 20px;
+    text-decoration: none !important; }
     .navigation__item img {
       height: 17px; }
     .navigation__item span {
