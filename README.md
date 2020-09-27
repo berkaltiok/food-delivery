@@ -1,5 +1,5 @@
 # Food Delivery App
-Figma Link: https://www.figma.com/community/file/807804125754055737/Food-Delivery-App
+Figma Link: https://www.figma.com/file/ApDJ1q8HkRoB9kDshBtBZ6/Food-Delivery-App
 
 ## Install Project
 ```
