@@ -10768,3 +10768,11 @@
   }];
   return void 0 === j.use && (j.use = j.Class.use, j.installModule = j.Class.installModule), j.use(Ee), j;
 });
+
+const appHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+};
+
+window.addEventListener('resize', appHeight);
+appHeight();

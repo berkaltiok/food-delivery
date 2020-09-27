@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: calc(100vh - 70px) 70px;
+  grid-template-rows: calc(var(--app-height) - 70px) 70px;
   gap: 0 0;
   grid-template-areas: "inner" "nav";
 

@@ -35,7 +35,7 @@ body {
   font-family: "Cera", sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: var(--app-height);
 
   &.lock {
     width: 100%;

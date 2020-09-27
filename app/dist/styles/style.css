@@ -8551,7 +8551,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh; }
+  min-height: var(--app-height); }
   body.lock {
     width: 100%;
     position: fixed;
@@ -8561,7 +8561,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: calc(100vh - 70px) 70px;
+  grid-template-rows: calc(var(--app-height) - 70px) 70px;
   gap: 0 0;
   grid-template-areas: "inner" "nav"; }
   .app__inner {
