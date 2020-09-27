@@ -8749,7 +8749,7 @@ body {
 
 .restaurants__item {
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 14px;
   background: #F1F2F6;
   width: 100%;
   display: block;
@@ -8761,7 +8761,7 @@ body {
     height: 130px;
     width: 100%;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 10px;
     position: relative; }
     .restaurants__item-images img {
       width: 100%;
