@@ -9,8 +9,13 @@
   &__inner {
     grid-area: inner;
     overflow: auto;
-    padding: 14px 16px;
+    padding: 14px 0;
 
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 100%;
+    }
     @media (min-width: $breakpoint-md) {
       &::-webkit-scrollbar {
         width: 0;

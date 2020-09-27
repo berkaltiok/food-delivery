@@ -1,0 +1,47 @@
+.category {
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  &__space {
+    width: 16px;
+    height: 100%;
+    display: inline-block;
+  }
+  &__item {
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+    margin-left: 28px;
+    text-decoration: none !important;
+
+    &-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      background: $brand-light;
+      display: flex;
+      margin-bottom: 10px;
+
+      &.active {
+        background: $brand-secondary;
+      }
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: $brand-text;
+      letter-spacing: .2px;
+    }
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}

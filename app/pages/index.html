@@ -12,10 +12,32 @@
   <body>
     <div class="app">
       <div class="app__inner">
-        <label class="search">
-          <input class="search__input" type="text" placeholder="Search for a restaraunt">
-          <button class="search__button"><img src="../dist/images/icons/search.svg" alt="Search Icon"></button>
-        </label>
+        <div class="container">
+          <label class="search mb-3">
+            <input class="search__input" type="text" placeholder="Search for a restaraunt">
+            <button class="search__button"><img src="../dist/images/icons/search.svg" alt="Search Icon"></button>
+          </label>
+        </div>
+        <div class="category">
+          <div class="category__space"></div>
+          <a href="#" class="category__item">
+            <div class="category__item-icon"></div>
+            <div class="category__item-title">Dinner</div>
+          </a>
+          <a href="#" class="category__item">
+            <div class="category__item-icon active"></div>
+            <div class="category__item-title">Lunch</div>
+          </a>
+          <a href="#" class="category__item">
+            <div class="category__item-icon"></div>
+            <div class="category__item-title">Breakfast</div>
+          </a>
+          <a href="#" class="category__item">
+            <div class="category__item-icon"></div>
+            <div class="category__item-title">Dessert</div>
+          </a>
+          <div class="category__space"></div>
+        </div>
       </div>
       <nav class="app__nav navigation">
         <div class="navigation__item">
