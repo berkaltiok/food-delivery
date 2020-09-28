@@ -177,10 +177,73 @@
     <div class="order">
       <div class="order__shadow"></div>
       <div class="order__inner">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="order__header">
+          <div class="order__header-title">Your Order</div>
+          <img class="order__header-close" src="../dist/images/icons/close.svg" alt="Close Icon">
+        </div>
+        <div class="order__info">
+          <div class="order__info-item">
+            <div class="order__info-text">624 Maple Ave</div>
+            <a href="#" class="order__info-link">Edit Address</a>
+          </div>
+          <div class="order__info-item">
+            <div class="order__info-icon"><img class="svg" src="../dist/images/icons/time.svg" alt="Time Icon"></div>
+            <div class="order__info-text">30 mins</div>
+            <a href="#" class="order__info-link">Choose time</a>
+          </div>
+        </div>
+        <div class="order__item swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide order__item-inner">
+              <div class="order__item-thumb">
+                <img src="../dist/images/restaurants-1.png" alt="Image">
+              </div>
+              <div class="order__item-content">
+                <h6>Chicken, Cashew, and Avocado Salad</h6>
+                <span>The Plant Cafe</span>
+              </div>
+              <div class="order__item-price">$15.00 x1</div>
+            </div>
+            <div class="swiper-slide order__item-trash"><button><img class="svg" src="../dist/images/icons/trash.svg" alt="Trash Icon"></button></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="order__item swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide order__item-inner">
+              <div class="order__item-thumb">
+                <img src="../dist/images/restaurants-2.png" alt="Image">
+              </div>
+              <div class="order__item-content">
+                <h6>Vegan Mac & Cheese</h6>
+                <span>The Plant Cafe</span>
+              </div>
+              <div class="order__item-price">$14.00 x2</div>
+            </div>
+            <div class="swiper-slide order__item-trash"><button><img class="svg" src="../dist/images/icons/trash.svg" alt="Trash Icon"></button></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="order__fee">
+          <div class="order__fee-icon"><img src="../dist/images/icons/car.svg" alt="Car Icon"></div>
+          <div class="order__fee-text">Delivery Fee</div>
+          <div class="order__fee-price">$2.50</div>
+        </div>
+        <div class="order__footer">
+          <div class="order__footer-price">Total: $17.50</div>
+          <button class="order__footer-button">Place Order <img src="../dist/images/icons/arrow.svg" alt="Arrow Icon"></button>
+        </div>
       </div>
     </div>
 
     <script src="../dist/scripts/app.js"></script>
+    <script>
+      new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        followFinger: false
+      });
+    </script>
   </body>
 </html>

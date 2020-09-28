@@ -31,6 +31,206 @@
     margin-top: auto;
     transform: translateY(100%);
     transition: all .3s;
+    padding: 40px 15px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 8px;
+    margin-bottom: 24px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 30px;
+      color: $brand-text;
+    }
+    &-close {
+      margin-left: auto;
+      padding: 8px;
+    }
+  }
+  &__info {
+    padding: 18px 22px 18px 30px;
+    background: $brand-primary;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    &-item {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+    &-link {
+      margin-left: auto;
+      font-weight: 500;
+      font-size: 12px;
+      color: $brand-text !important;
+      text-decoration: none !important;
+      border-radius: 5px;
+      padding: 3px 8px;
+      transition: all .3s;
+
+      &:focus {
+        background: rgba(black, .1);
+      }
+    }
+    &-text {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      color: $brand-text;
+    }
+    &-icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      background: rgba(black, .08);
+      border-radius: 5px;
+    }
+  }
+  &__item {
+    margin: 0 -15px;
+    margin-bottom: 24px;
+
+    &-inner {
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+    }
+    &-thumb {
+      flex: 0 0 80px;
+      height: 72px;
+      width: 80px;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-right: 12px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &-content {
+      color: $brand-text;
+      max-width: 130px;
+
+      h6 {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      span {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &-price {
+      margin-left: auto;
+      color: $brand-text;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    &-trash {
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 72px;
+      padding-right: 15px;
+
+      button {
+        background: transparent;
+        border: 0;
+        border-radius: 10px;
+        height: 42px;
+        width: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+        outline: none !important;
+
+        &:focus, &:active {
+          background: rgba(#EE5253, .1);
+        }
+      }
+    }
+  }
+  &__fee {
+    display: flex;
+    align-items: center;
+    color: $brand-text;
+    margin-bottom: 44px;
+
+    &-icon {
+      height: 54px;
+      background: $brand-warning;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      margin-right: 12px;
+    }
+    &-text {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    &-price {
+      margin-left: auto;
+      font-size: 12px;
+    }
+  }
+  &__footer {
+    padding: 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-price {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 28px;
+      color: $brand-text;
+    }
+    &-button {
+      outline: none !important;
+      background: $brand-secondary;
+      border-radius: 10px;
+      height: 46px;
+      padding: 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 12px;
+      color: $brand-text;
+      border: none;
+      letter-spacing: .2px;
+      transition: all .3s;
+
+      img {
+        margin-left: 10px;
+      }
+      &:focus {
+        background: darken($brand-secondary, 5%);
+      }
+    }
   }
 
   &.active {
