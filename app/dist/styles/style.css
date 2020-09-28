@@ -8916,6 +8916,7 @@ body.popup .app {
     -webkit-transition: all .3s;
     transition: all .3s; }
   .order__inner {
+    overflow: auto;
     z-index: 1;
     max-height: 90%;
     background: #FFFFFF;
