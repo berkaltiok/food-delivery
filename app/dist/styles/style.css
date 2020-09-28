@@ -8072,10 +8072,14 @@ body.popup .app {
     -webkit-box-shadow: 30px 30px 99px rgba(255, 207, 100, 0.27);
             box-shadow: 30px 30px 99px rgba(255, 207, 100, 0.27);
     overflow: hidden; }
+    .showcase__mobile-inner {
+      border-radius: 40px;
+      overflow: hidden;
+      height: 100%;
+      width: 100%; }
     .showcase__mobile iframe {
       height: 100%;
       width: 100%;
-      border-radius: 40px;
       border: 0; }
 
 .header {
