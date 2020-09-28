@@ -1,0 +1,47 @@
+.order {
+  height: var(--app-height);
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  visibility: hidden;
+  overflow: hidden;
+
+  &__shadow {
+    background: rgba(10, 25, 30, 0.28);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    transition: all .3s;
+  }
+  &__inner {
+    z-index: 1;
+    max-height: 90%;
+    background: #FFFFFF;
+    border-radius: 30px 30px 0 0;
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    transform: translateY(100%);
+    transition: all .3s;
+  }
+
+  &.active {
+    visibility: visible;
+  }
+  &.active & {
+    &__shadow {
+      opacity: 1;
+    }
+    &__inner {
+      transform: translateY(0);
+    }
+  }
+}
