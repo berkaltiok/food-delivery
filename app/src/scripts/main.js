@@ -12,7 +12,7 @@ $(".header__order").on("click", function () {
     .children(".order")
     .addClass("active");
 });
-$(".order__shadow").on("click", function () {
+$(".order__shadow, .order__header-close").on("click", function () {
   $("body")
     .removeClass("popup")
     .children(".order")
