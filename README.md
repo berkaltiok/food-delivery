@@ -10,5 +10,5 @@ npm install
 
 ## Start Project
 ```
-npm start
+npm run start
 ```
