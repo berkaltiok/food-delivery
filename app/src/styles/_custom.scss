@@ -4,6 +4,7 @@
   src: url('../fonts/light.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
   src: url('../fonts/medium.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -18,6 +20,7 @@
   src: url('../fonts/bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -25,6 +28,7 @@
   src: url('../fonts/black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 html {

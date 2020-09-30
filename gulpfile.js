@@ -36,6 +36,17 @@ function style() {
     .pipe(browserSync.stream());
 }
 
+function minStyle() {
+  return gulp.src(config.styles)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('style.css'))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest('app/dist/styles'))
+    .pipe(browserSync.stream());
+}
+
 function watch() {
   browserSync.init({
     server: {
@@ -49,7 +60,7 @@ function watch() {
       });
   });
 
-  gulp.watch('app/src/styles/**/*.scss', style);
+  gulp.watch('app/src/styles/**/*.scss', gulp.parallel(style, minStyle));
   gulp.watch('app/src/scripts/**/*.js', scripts);
   gulp.watch('app/src/images/**/*', images);
   gulp.watch('**/*.html', files);
@@ -57,5 +68,6 @@ function watch() {
 
 exports.images = images;
 exports.style = style;
+exports.minStyle = minStyle;
 exports.scripts = scripts;
 exports.default = watch;
